@@ -1428,7 +1428,7 @@ dnl
 dnl PHP_FOPENCOOKIE
 dnl
 AC_DEFUN([PHP_FOPENCOOKIE], [
-  AC_CHECK_FUNC(fopencookie, [have_glibc_fopencookie=yes])
+  AC_CHECK_FUNC(fopencookie, [have_glibc_fopencookie=no])
 
   if test "$have_glibc_fopencookie" = "yes"; then
 dnl This comes in two flavors: newer glibcs (since 2.1.2?) have a type called
